@@ -1,7 +1,10 @@
-import {shuffle} from "./shuffle.js"
-import {check} from "./check.js"
+import { shuffle } from "./shuffle.js"
+import { check } from "./check.js"
+import { readFlags } from "./flags.js"
 
-const sortedArray = [1,2,3,4,5];
+readFlags();
+
+const sortedArray = [1,2];
 let arrayToSort = shuffle(sortedArray);
 let isSorted = false;
 
