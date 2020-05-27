@@ -2,7 +2,9 @@ import { shuffle } from "./shuffle.js"
 import { check } from "./check.js"
 import { readFlags } from "./flags.js"
 
-readFlags();
+const arrLength = readFlags();
+
+console.log(arrLength);
 
 const sortedArray = [1,2];
 let arrayToSort = shuffle(sortedArray);

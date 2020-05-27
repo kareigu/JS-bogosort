@@ -4,8 +4,9 @@ import { parse } from "https://deno.land/std/flags/mod.ts";
 export let readFlags = () => {
   const flags = parse(args);
 
-  if(flags.l != undefined || isNaN(flags.l)) {
-    console.log(typeof flags.l);
+  if(typeof flags.l == "number") {
+    return flags.l;
+  } else {
+    return 8;
   }
-
 }

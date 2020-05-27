@@ -1,1 +1,1 @@
-deno run ./src/index.js -l 
+deno run ./src/index.js
