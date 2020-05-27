@@ -1,17 +1,17 @@
 import { shuffle } from "./shuffle.js"
 import { check } from "./check.js"
 import { readFlags } from "./flags.js"
+import { fillArray } from "./fillArray.js"
 
 const arrLength = readFlags();
 
-console.log(arrLength);
+console.log("Running bogosort for an array of: " + arrLength);
 
-const sortedArray = [1,2];
+const sortedArray = fillArray(arrLength);
 let arrayToSort = shuffle(sortedArray);
 let isSorted = false;
 
 while (!isSorted) {
-  console.log(arrayToSort);
   if (check(sortedArray, arrayToSort)) {
     isSorted = true;
     console.log("Result: " + arrayToSort);
