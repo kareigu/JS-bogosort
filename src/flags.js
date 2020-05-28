@@ -9,6 +9,6 @@ export let readFlags = () => {
   if(typeof flags.l == "number") {
     return flags.l;
   } else {
-    return 8; //Otherwise return this default value
+    return 10; //Otherwise return this default value
   }
 }
