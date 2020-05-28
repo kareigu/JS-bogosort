@@ -13,13 +13,16 @@ const sortedArray = fillArray(arrLength);
 let arrayToSort = shuffle(sortedArray);
 
 let isSorted = false;
+let iterations = 0;
 
 //Keep checking and shuffling the array until it matches the reference array
 while (!isSorted) {
   if (check(sortedArray, arrayToSort)) {
     //End the loop and log the result for reference
     isSorted = true;
+    console.log("Iterations: " + iterations);
     console.log("Result: " + arrayToSort);
   }
+  iterations++;
   arrayToSort = shuffle(arrayToSort);
 }
