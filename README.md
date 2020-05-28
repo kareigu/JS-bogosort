@@ -4,4 +4,4 @@ Runs on Deno
 -  
 Flag | Purpose
 ------------ | -------------
--l X | choose the length of array being bogosorted
+-l | choose the length of array being bogosorted
